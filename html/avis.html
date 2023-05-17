@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/avis.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@500;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3f79e37ece.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="/images/favicon.ico" type="image/ico">
+    <title>HOTELCOP | Avis</title>
+</head>
+
+<body>
+    <script src="../main.js" defer></script>
+
+    <header>
+        <nav>
+            <div class="navigation">
+                <a href="../index.html" class="fr">Accueil</a>
+                <a href="../index.html" class="en">Home</a>
+                <a href="chambre.html" class="fr">Chambre</a>
+                <a href="chambre.html" class="en">Room</a>
+                <a href="restaurant.html" class="fr">Restaurant</a>
+                <a href="restaurant.html" class="en">Restaurant</a>
+                <a href="spa.html" class="fr">Spa</a>
+                <a href="spa.html" class="en">Spa</a>
+                <a href="avis.html" class="fr" id="selected">Avis</a>
+                <a href="avis.html" class="en" id="selected">Notice</a>
+                <a href="hotel.html" class="fr">L'hôtel</a>
+                <a href="hotel.html" class="en">Hotel</a>
+                <a href="actualites.html" class="fr">Actualités</a>
+                <a href="actualites.html" class="en">News</a>
+            </div>
+
+            <div>
+                <div id="mySidenav" class="sidenav">
+                    <a id="closeBtn" href="#" class="close">x</a>
+                    <ul>
+                        <li class="fr"><a href="../index.html">Accueil</a></li>
+                        <li class="en"><a href="../index.html">Home</a></li>
+                        <li class="fr"><a href="chambre.html">Chambre</a></li>
+                        <li class="en"><a href="chambre.html">Room</a></li>
+                        <li class="fr"><a href="restaurant.html">Restaurant</a></li>
+                        <li class="en"><a href="restaurant.html">Restaurant</a></li>
+                        <li class="fr"><a href="spa.html">Spa</a></li>
+                        <li class="en"><a href="spa.html">Spa</a></li>
+                        <li class="fr"><a href="avis.html" id="selected">Avis</a></li>
+                        <li class="en"><a href="avis.html" id="selected">Notice</a></li>
+                        <li class="fr"><a href="hotel.html">L'hôtel</a></li>
+                        <li class="en"><a href="hotel.html">Hotel</a></li>
+                        <li class="fr"><a href="actualites.html">Actualités</a></li>
+                        <li class="en"><a href="actualites.html">News</a></li>
+                    </ul>
+                </div>
+
+                <a href="#" id="openBtn">
+                    <span class="burger-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </a>
+            </div>
+
+            <div class="choixLang">
+                <a href="">
+                    <div> <img src="../images/drapeauFr.png" alt="" class="btnFr"></div>
+                </a>
+                <a href="">
+                    <div> <img src="../images/drapeauEng.png" alt="" class="btnEn"></div>
+                </a>
+            </div>
+        </nav>
+
+        <div class="logoBanniere">
+            <div class="logoH">
+                <img src="../images/logoH.png" alt="Logo de l'hôtel">
+            </div>
+
+
+            <div class="banniere">
+                <img src="../images/avis.jpg" alt="Bannière de l'Hôtel">
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+
+        <div class="contact">
+            <h2>Exprimez-vous</h2>
+            <p>Donnez votre avis sur HotelCop,
+                <br> pour nous permettre d'améliorer nos services et convenir à vos attentes.
+            </p>
+            <div class="coordoFormulaire">
+                <form action="" method="get" class="formulaire">
+
+                    <div class="form-example">
+                        <input type="text" name="firstname" id="firstname" required placeholder="Prénom*">
+                    </div>
+                    <div class="form-example">
+                        <textarea name="message" id="message" required placeholder="Message*" rows="3"
+                            cols="21"></textarea>
+                    </div>
+                    <div class="form-example">
+                        <input type="submit" value="Envoyer" class="submit">
+                    </div>
+                </form>
+            </div>
+
+            <div class="avis">
+
+                <div class="commentaire">
+                    <h3>Benoit</h3>
+                    <p>Personnel très agréable et accueillant et l'emplacement est idéal. Les chambres sont
+                        spacieuses et permettent de bien s'installer. Je recommande cet hôtel.</p>
+                </div>
+
+                <div class="commentaire">
+                    <h3>Suzi</h3>
+                    <p>Très bon hotel, le personnel est extremement sympathique et serviable. Je conseille très
+                        fortement.
+                        Nous avons passé 4 nuits en famille. Les chambres étaient confortables, les repas étaient bons.
+                    </p>
+                </div>
+
+                <div class="commentaire">
+                    <h3>Léa</h3>
+                    <p>Tres bon séjour. Accueil impeccable, hôtesses d' accueil disponibles, efficaces et souriantes.
+                        Literie de qualité kitchenette bien équipée et terrasse très agréable pour le petit déjeuner (2
+                        bonnes boulangeries à proximité de l'hôtel). Emplacement parfait pour vadrouiller dans Paris</p>
+                </div>
+
+                <div class="commentaire">
+                    <h3>Gérard</h3>
+                    <p>Super séjour dans le cadre d'un weekend parisien. Nous voulions un hôtel en hyper centre pour
+                        faire le maximum à pieds. Les chambres sont grandes et propres. La vue est magnifique ! Le
+                        personnel est hyper souriant et disponible ce qui n'est pas toujours le cas dans d'autres hôtels
+                        ... La rue est peu passante et garantie donc une nuit calme. Nous avons même pu profiter de la
+                        piscine qui est vraiment reposant après une longue journée et rythme parisien. Nous recommandons
+                        sans soucis et encore merci pour ce séjour.</p>
+                </div>
+
+                <div class="commentaire">
+                    <h3>Julien</h3>
+                    <p>Magnifique hôtel, les chambres sont décorées avec beaucoup de goût, vue sublime sur l 'opéra
+                        comique, piscine très agréable...et le personnel est adorable., aux petits soins. Merci à tous,
+                        Nous avons passé 1 excellent séjour</p>
+                </div>
+
+                <div class="commentaire">
+                    <h3>Lisa</h3>
+                    <p>Une très belle maison plus qu'un hôtel ! Personnel attentionné. Tout y est pensé afin que l'on
+                        s'y sente comme chez soit. Une bulle hors du temps en plein centre de Paris. Nous y reviendrons
+                        avec grand plaisir.</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="logoFooter">
+                <img src="../images/logoH.png" alt="Logo de l'hotel">
+            </div>
+            <div class="contactFooter">
+                <h4>HotelCop</h4>
+                <p>5, rue de Marivaux<br>75002 Paris</p>
+                <p class="numFooter">Tél 01 24 58 24 02</p>
+            </div>
+            <div>
+                <div class="linkFooter">
+                    <a href="hotel.html" class="link1">Nous contacter</a>
+                    <a href="chambre.html" class="link2">Réserver</a>
+                </div>
+                <div>
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer2">
+            <h5>© HotelCop 2023</h5>
+            <a href="">Mentions Légales</a>
+            <a href="https://dae.gouv.nc/sites/default/files/atoms/files/modeletype_cgv_ccpc.pdf" target="_blank">
+                Conditions Générales de Vente</a>
+            <a href="../images/plan.png" target="_blank">Plan du site</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

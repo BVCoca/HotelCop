@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --vert: #8C7B26;
+    --marron: #40352C;
+    --beige: #F2D1B3;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2 {
+    font-family: 'Alkatra', cursive;
+}
+
+body {
+    max-width: 1920px;
+    min-width: 700px;
+}
+
+.fr {
+    display: none;
+}
+
+
+.en {
+    display: none;
+}
+
+/*------------------------------HEADER------------------------------*/
+
+.logoBanniere {
+    margin: 0% 3%;
+}
+
+.banniere {
+    overflow: hidden;
+    margin-top: 2%;
+    height: 870px;
+}
+
+.banniere img {
+    object-fit: contain;
+}
+
+.logoH {
+    position: fixed;
+    top: 10px;
+    left: 45%;
+    background-color: rgba(245, 245, 245, 0.712);
+    border-radius: 50%;
+    padding: 10px;
+    border: 2px solid var(--vert);
+    z-index: 1;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    background-color: rgba(245, 245, 245, 0.900);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 12px;
+    padding-left: 20px;
+    z-index: 1;
+    font-family: 'Alkatra', cursive;
+}
+
+.logoH img {
+    border: 2px solid var(--vert);
+    padding: 17px 15px;
+    border-radius: 50%;
+    width: 50px;
+    height: 45px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+nav a {
+    font-size: 1.3rem;
+    color: var(--vert);
+    transition: 0.5s;
+    margin-right: 35px;
+}
+
+nav a:hover {
+    color: var(--marron);
+    transform: scale(1.20);
+    transition-duration: 0.5s;
+}
+
+a {
+    text-decoration: none;
+}
+
+.choixLang {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.choixLang img {
+    width: 30px;
+    border-radius: 5px;
+}
+
+/* Sidenav menu */
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -250px;
+    background-color: #e8e8e8;
+    padding-top: 60px;
+    transition: left 0.5s ease;
+    display: none;
+    font-family: 'Alkatra', cursive;
+}
+
+/* Sidenav menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--vert);
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: var(--marron);
+}
+
+.sidenav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Active class */
+.sidenav.active {
+    left: 0;
+}
+
+/* Close btn */
+.sidenav .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+
+/* Icône burger */
+.burger-icon span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: var(--vert);
+    margin: 6px 0;
+}
+
+#openBtn {
+    display: none;
+}
+
+
+/*------------------------------MAIN------------------------------*/
+
+.banniereChambre {
+    background-color: var(--vert);
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chambre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imageClassique {
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+    margin: 0px 2%;
+}
+
+.blockImg1 {
+    width: 50%;
+}
+
+.blockImg2 {
+    width: 50%;
+    margin-left: 25px;
+}
+
+.imageClassique img {
+    border-radius: 10px;
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.descChambre {
+    background-color: white;
+    width: 40%;
+    position: relative;
+    padding: 5%;
+    bottom: 300px;
+    padding-bottom: 1%;
+    border-radius: 10px;
+}
+
+.descChambre h2 {
+    margin-top: 0px;
+    margin-bottom: 35px;
+    color: var(--marron);
+}
+
+.descChambre p {
+    line-height: 1.8rem;
+    color: var(--marron);
+}
+
+hr {
+    border: none;
+    border-top: 3px double var(--vert);
+    margin: 30px 0px;
+}
+
+.equipement {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.equipement p {
+    font-style: italic;
+    font-weight: bolder;
+    font-family: 'Alkatra', cursive;
+    margin: 0px;
+}
+
+.equipement div {
+    display: flex;
+    margin-bottom: 25px;
+    width: 50%;
+}
+
+.equipement img {
+    width: 3rem;
+    height: 3rem;
+    color: var(--vert);
+    margin-right: 15px;
+}
+
+.coordoFormulaire {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boxFormulaire {
+    position: relative;
+    bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boxFormulaire h2 {
+    margin-top: 0px;
+    margin-bottom: 35px;
+    color: white;
+    text-align: center;
+}
+
+.boxFormulaire p {
+    font-family: 'Roboto', sans-serif;
+    color: var(--marron);
+    font-style: italic;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+
+.formulaire {
+    background-color: white;
+    padding: 5%;
+    border-radius: 10px;
+}
+
+h3 {
+    color: var(--marron);
+    font-family: 'Alkatra', cursive;
+    width: 100%;
+}
+
+.dateFormulaire {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.form-example {
+    margin-left: 25px;
+    font-size: 1.2rem;
+    color: var(--vert);
+    margin-top: 15px;
+}
+
+label {
+    display: block;
+    width: 170px;
+    margin-bottom: 15px;
+    font-family: 'Alkatra', cursive;
+}
+
+input {
+    border: 2px solid var(--vert);
+    color: var(--marron);
+    font-family: 'Roboto', sans-serif
+}
+
+input:focus {
+    outline: var(--marron);
+}
+
+.submit {
+    background-color: var(--vert);
+    font-family: 'Alkatra', cursive;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.submit:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    background-color: var(--vert);
+    transition-duration: 0.5s;
+    color: white;
+}
+
+
+/*------------------------------RESPONSIVE------------------------------*/
+
+@media screen and (max-width: 1550px) {
+    .logoH {
+        top: 55px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+
+    .logoH {
+        left: inherit;
+        top: 5px;
+    }
+
+    .logoBanniere {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .sidenav {
+        display: block;
+    }
+
+    #openBtn {
+        display: block;
+    }
+
+    .imageClassique {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blockImg1 {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .blockImg2 {
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .descChambre {
+        background-color: white;
+        width: 60%;
+        position: relative;
+        padding: 5%;
+        bottom: 900px;
+    }
+
+    .chambre {
+        height: 1500px;
+    }
+}
